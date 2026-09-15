@@ -1,0 +1,41 @@
+{
+  "name": "dessop/ocr-laravel",
+  "description": "Official DESSOP OCR integration for Laravel",
+  "keywords": ["dessop", "ocr", "laravel", "document"],
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": "^8.2",
+    "dessop/ocr": "^1.0",
+    "illuminate/support": "^10.0|^11.0|^12.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0|^9.0|^10.0",
+    "phpunit/phpunit": "^10.0|^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dessop\\Ocr\\Laravel\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Dessop\\Ocr\\Laravel\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Dessop\\Ocr\\Laravel\\DessopOcrServiceProvider"
+      ],
+      "aliases": {
+        "Ocr": "Dessop\\Ocr\\Laravel\\Facades\\Ocr"
+      }
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
