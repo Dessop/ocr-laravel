@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP 8.2+" />
   </a>
   <a href="https://laravel.com">
-    <img src="https://img.shields.io/badge/Laravel-10%20%7C%2011%20%7C%2012-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel 10, 11 or 12" />
+    <img src="https://img.shields.io/badge/Laravel-10%20%7C%2011%20%7C%2012%20%7C%2013-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel 10, 11, 12 or 13" />
   </a>
   <a href="https://github.com/dessop/dessop-ocr-suite/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License" />
@@ -36,7 +36,7 @@ This package connects a Laravel application to the DESSOP OCR service so you can
 ## Requirements
 
 - PHP 8.2+
-- Laravel 10, 11 or 12
+- Laravel 10, 11, 12 or 13
 
 ## Installation
 
