@@ -32,6 +32,7 @@ final class DessopOcrServiceProvider extends ServiceProvider
             );
         });
 
+        $this->app->singleton(OcrClientInterface::class, fn () => $this->app->make(OcrClient::class));
         $this->app->alias(OcrClient::class, OcrClientInterface::class);
     }
 

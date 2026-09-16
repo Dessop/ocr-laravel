@@ -76,6 +76,49 @@ $result = Ocr::process(
 $text = $result->text();
 ```
 
+### Process asynchronously
+
+```php
+use Dessop\Ocr\Laravel\Facades\Ocr;
+
+$job = Ocr::processAsync(
+    storage_path('app/documentos/factura.pdf')
+);
+
+$jobId = $job->jobId();
+```
+
+### Check and retry a job
+
+```php
+use Dessop\Ocr\Laravel\Facades\Ocr;
+
+$job = Ocr::getJob($jobId);
+Ocr::retryJob($jobId);
+```
+
+### Health check
+
+```php
+use Dessop\Ocr\Laravel\Facades\Ocr;
+
+if (Ocr::health()) {
+    // DESSOP OCR is available.
+}
+```
+
+### Document operations
+
+```php
+use Dessop\Ocr\Laravel\Facades\Ocr;
+
+$documents = Ocr::documents();
+$document = Ocr::document($documentId);
+$text = Ocr::documentText($documentId);
+$fileContent = Ocr::documentFile($documentId);
+$ocrPdf = Ocr::documentOcrPdf($documentId);
+```
+
 ### Inject the client directly
 
 ```php
